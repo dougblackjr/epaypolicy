@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * AttributeValueModel Class Doc Comment
  *
  * @category Class
  * @description Contains information about a single attribute value that is tied to a transaction.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

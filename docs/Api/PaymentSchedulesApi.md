@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\PaymentSchedulesApi
+# Tns\EpayPolicy\PaymentSchedulesApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\PaymentSchedulesApi(
+$apiInstance = new Tns\EpayPolicy\Api\PaymentSchedulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ void (empty response body)
 ## `paymentSchedulesGet()`
 
 ```php
-paymentSchedulesGet($id, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel
+paymentSchedulesGet($id, $impersonation_account_key): \Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel
 ```
 
 Retrieves the details of a payment schedule.
@@ -86,12 +86,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\PaymentSchedulesApi(
+$apiInstance = new Tns\EpayPolicy\Api\PaymentSchedulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel**](../Model/GetPaymentScheduleResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel**](../Model/GetPaymentScheduleResponseModel.md)
 
 ### Authorization
 
@@ -148,18 +148,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\PaymentSchedulesApi(
+$apiInstance = new Tns\EpayPolicy\Api\PaymentSchedulesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_payment_schedule_request_model = new \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel(); // \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel | Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute.
+$post_payment_schedule_request_model = new \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel(); // \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel | Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -173,7 +173,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_payment_schedule_request_model** | [**\Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel**](../Model/PostPaymentScheduleRequestModel.md)| Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. | |
+| **post_payment_schedule_request_model** | [**\Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel**](../Model/PostPaymentScheduleRequestModel.md)| Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type

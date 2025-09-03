@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **finance_ineligibility_reason** | **string** |  | [optional]
 **number_of_installments** | **int** |  | [optional]
 **installment_amount** | **float** |  | [optional]
-**exception** | [**\Tns\\EpayPolicy\Model\SerializableException**](SerializableException.md) |  | [optional]
+**exception** | [**\Tns\EpayPolicy\Model\SerializableException**](SerializableException.md) |  | [optional]
 **finance_eligibility_hash** | **string** |  | [optional]
 **finance_company_name** | **string** |  | [optional]
 

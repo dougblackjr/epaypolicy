@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\TransactionFeesApi
+# Tns\EpayPolicy\TransactionFeesApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the o
 ## `transactionFeesGet()`
 
 ```php
-transactionFeesGet($amount, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel
+transactionFeesGet($amount, $impersonation_account_key): \Tns\EpayPolicy\Model\GetTransactionFeesResponseModel
 ```
 
 Calculates and returns transaction fees for a given net amount due based on the account.
@@ -23,12 +23,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionFeesApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionFeesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel**](../Model/GetTransactionFeesResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel**](../Model/GetTransactionFeesResponseModel.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * BatchListItemModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class BatchListItemModel implements ModelInterface, ArrayAccess, \JsonSerializab
         'number_of_debits' => 'int',
         'total_of_debits' => 'float',
         'currency' => 'string',
-        'divisions' => '\Tns\\EpayPolicy\Model\DivisionViewModel[]',
+        'divisions' => '\Tns\EpayPolicy\Model\DivisionViewModel[]',
         'processor' => 'string'
     ];
 
@@ -574,7 +574,7 @@ class BatchListItemModel implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets divisions
      *
-     * @return \Tns\\EpayPolicy\Model\DivisionViewModel[]|null
+     * @return \Tns\EpayPolicy\Model\DivisionViewModel[]|null
      */
     public function getDivisions()
     {
@@ -584,7 +584,7 @@ class BatchListItemModel implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets divisions
      *
-     * @param \Tns\\EpayPolicy\Model\DivisionViewModel[]|null $divisions divisions
+     * @param \Tns\EpayPolicy\Model\DivisionViewModel[]|null $divisions divisions
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetTransactionsResponseModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetTransactionsResponseModel implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transactions' => '\Tns\\EpayPolicy\Model\GetTransactionResponseModel[]',
+        'transactions' => '\Tns\EpayPolicy\Model\GetTransactionResponseModel[]',
         'total_records' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetTransactionsResponseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets transactions
      *
-     * @return \Tns\\EpayPolicy\Model\GetTransactionResponseModel[]|null
+     * @return \Tns\EpayPolicy\Model\GetTransactionResponseModel[]|null
      */
     public function getTransactions()
     {
@@ -310,7 +310,7 @@ class GetTransactionsResponseModel implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets transactions
      *
-     * @param \Tns\\EpayPolicy\Model\GetTransactionResponseModel[]|null $transactions transactions
+     * @param \Tns\EpayPolicy\Model\GetTransactionResponseModel[]|null $transactions transactions
      *
      * @return self
      */

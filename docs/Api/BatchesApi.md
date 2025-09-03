@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\BatchesApi
+# Tns\EpayPolicy\BatchesApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the o
 ## `batchesGet()`
 
 ```php
-batchesGet($page, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetBatchesResponseModel
+batchesGet($page, $impersonation_account_key): \Tns\EpayPolicy\Model\GetBatchesResponseModel
 ```
 
 Gets a collection of Batches.
@@ -23,12 +23,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\BatchesApi(
+$apiInstance = new Tns\EpayPolicy\Api\BatchesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetBatchesResponseModel**](../Model/GetBatchesResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetBatchesResponseModel**](../Model/GetBatchesResponseModel.md)
 
 ### Authorization
 

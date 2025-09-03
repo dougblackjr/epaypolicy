@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetTokenResponseModel Class Doc Comment
  *
  * @category Class
  * @description Provides details of a token.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetTokenResponseModel implements ModelInterface, ArrayAccess, \JsonSeriali
         'id' => 'string',
         'payer' => 'string',
         'email_address' => 'string',
-        'attribute_values' => '\Tns\\EpayPolicy\Model\AttributeValueModel[]',
+        'attribute_values' => '\Tns\EpayPolicy\Model\AttributeValueModel[]',
         'transaction_type' => 'string',
         'masked_account_number' => 'string',
         'country' => 'string'
@@ -483,7 +483,7 @@ class GetTokenResponseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets attribute_values
      *
-     * @return \Tns\\EpayPolicy\Model\AttributeValueModel[]|null
+     * @return \Tns\EpayPolicy\Model\AttributeValueModel[]|null
      */
     public function getAttributeValues()
     {
@@ -493,7 +493,7 @@ class GetTokenResponseModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets attribute_values
      *
-     * @param \Tns\\EpayPolicy\Model\AttributeValueModel[]|null $attribute_values A collection of key/value pairs for any custom attribute values for this token.
+     * @param \Tns\EpayPolicy\Model\AttributeValueModel[]|null $attribute_values A collection of key/value pairs for any custom attribute values for this token.
      *
      * @return self
      */

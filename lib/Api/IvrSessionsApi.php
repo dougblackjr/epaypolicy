@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * IvrSessionsApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,11 +132,11 @@ class IvrSessionsApi
      *
      * Creates a temporary \&quot;session\&quot; with parameters so that the caller can be forwarded to the IVR service with this context.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
+     * @param  \Tns\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['ivrSessionsPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -150,11 +150,11 @@ class IvrSessionsApi
      *
      * Creates a temporary \&quot;session\&quot; with parameters so that the caller can be forwarded to the IVR service with this context.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
+     * @param  \Tns\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['ivrSessionsPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -219,7 +219,7 @@ class IvrSessionsApi
      *
      * Creates a temporary \&quot;session\&quot; with parameters so that the caller can be forwarded to the IVR service with this context.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
+     * @param  \Tns\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['ivrSessionsPost'] to see the possible values for this operation
      *
@@ -241,7 +241,7 @@ class IvrSessionsApi
      *
      * Creates a temporary \&quot;session\&quot; with parameters so that the caller can be forwarded to the IVR service with this context.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
+     * @param  \Tns\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['ivrSessionsPost'] to see the possible values for this operation
      *
@@ -279,7 +279,7 @@ class IvrSessionsApi
     /**
      * Create request for operation 'ivrSessionsPost'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
+     * @param  \Tns\EpayPolicy\Model\PostIvrSessionRequestModel $post_ivr_session_request_model Contains the parameters for the \&quot;session\&quot;. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['ivrSessionsPost'] to see the possible values for this operation
      *

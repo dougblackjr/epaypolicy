@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\ManagedInvoicesApi
+# Tns\EpayPolicy\ManagedInvoicesApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -27,19 +27,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\ManagedInvoicesApi(
+$apiInstance = new Tns\EpayPolicy\Api\ManagedInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | The public id of the managed invoice to be edited.
-$post_create_managed_invoices_finance_request_model = new \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel(); // \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel | The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute.
+$post_create_managed_invoices_finance_request_model = new \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel(); // \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel | The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -54,7 +54,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| The public id of the managed invoice to be edited. | |
-| **post_create_managed_invoices_finance_request_model** | [**\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel**](../Model/PostCreateManagedInvoicesFinanceRequestModel.md)| The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. | |
+| **post_create_managed_invoices_finance_request_model** | [**\Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel**](../Model/PostCreateManagedInvoicesFinanceRequestModel.md)| The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type
@@ -77,7 +77,7 @@ void (empty response body)
 ## `managedInvoicesGet()`
 
 ```php
-managedInvoicesGet($id, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel
+managedInvoicesGet($id, $impersonation_account_key): \Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel
 ```
 
 Retrieves the details of a managed invoice.
@@ -90,12 +90,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\ManagedInvoicesApi(
+$apiInstance = new Tns\EpayPolicy\Api\ManagedInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel**](../Model/GetManagedInvoiceResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel**](../Model/GetManagedInvoiceResponseModel.md)
 
 ### Authorization
 
@@ -152,18 +152,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\ManagedInvoicesApi(
+$apiInstance = new Tns\EpayPolicy\Api\ManagedInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_create_managed_invoices_request_model = new \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel(); // \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel | The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute.
+$post_create_managed_invoices_request_model = new \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel(); // \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel | The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -177,7 +177,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_create_managed_invoices_request_model** | [**\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel**](../Model/PostCreateManagedInvoicesRequestModel.md)| The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. | |
+| **post_create_managed_invoices_request_model** | [**\Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel**](../Model/PostCreateManagedInvoicesRequestModel.md)| The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type
@@ -200,7 +200,7 @@ void (empty response body)
 ## `managedInvoicesSearch()`
 
 ```php
-managedInvoicesSearch($payer_name, $created_by, $due_date_from, $due_date_to, $managed_invoice_search_status_type, $page, $page_size, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel
+managedInvoicesSearch($payer_name, $created_by, $due_date_from, $due_date_to, $managed_invoice_search_status_type, $page, $page_size, $impersonation_account_key): \Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel
 ```
 
 Retrieves a list of Managed invoices based on search parameters.
@@ -213,12 +213,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\ManagedInvoicesApi(
+$apiInstance = new Tns\EpayPolicy\Api\ManagedInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -256,7 +256,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel**](../Model/GetManagedInvoicesResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel**](../Model/GetManagedInvoicesResponseModel.md)
 
 ### Authorization
 
@@ -287,12 +287,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\ManagedInvoicesApi(
+$apiInstance = new Tns\EpayPolicy\Api\ManagedInvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

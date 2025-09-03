@@ -17,10 +17,10 @@ Name | Type | Description | Notes
 **off_platform_date** | **\DateTime** | The date when invoice was completed or paid Offplatform. | [optional]
 **quick_quote_date** | **\DateTime** | The date when quick quote was retrieved to check for financing. | [optional]
 **email_send_date** | **\DateTime** | The date when an email was sent to the payer. | [optional]
-**line_items** | [**\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]**](QuoteInvoiceLineItem.md) |  | [optional]
-**taxes** | [**\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]**](QuoteInvoiceLineItem.md) |  | [optional]
-**fees** | [**\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]**](QuoteInvoiceLineItem.md) |  | [optional]
-**financing_info** | [**\Tns\\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel**](QuoteInvoiceFinancingInfoModel.md) |  | [optional]
-**quick_quote** | [**\Tns\\EpayPolicy\Model\QuickQuoteModel**](QuickQuoteModel.md) |  | [optional]
+**line_items** | [**\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]**](QuoteInvoiceLineItem.md) |  | [optional]
+**taxes** | [**\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]**](QuoteInvoiceLineItem.md) |  | [optional]
+**fees** | [**\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]**](QuoteInvoiceLineItem.md) |  | [optional]
+**financing_info** | [**\Tns\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel**](QuoteInvoiceFinancingInfoModel.md) |  | [optional]
+**quick_quote** | [**\Tns\EpayPolicy\Model\QuickQuoteModel**](QuickQuoteModel.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

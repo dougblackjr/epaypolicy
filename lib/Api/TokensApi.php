@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * TokensApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,7 +142,7 @@ class TokensApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensDelete'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -160,7 +160,7 @@ class TokensApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensDelete'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -385,9 +385,9 @@ class TokensApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetTokenResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetTokenResponseModel|array<string,object>
      */
     public function tokensGet($id, $impersonation_account_key = null, string $contentType = self::contentTypes['tokensGet'][0])
     {
@@ -404,9 +404,9 @@ class TokensApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetTokenResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetTokenResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function tokensGetWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['tokensGet'][0])
     {
@@ -449,11 +449,11 @@ class TokensApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetTokenResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetTokenResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetTokenResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetTokenResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -471,7 +471,7 @@ class TokensApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetTokenResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetTokenResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -504,7 +504,7 @@ class TokensApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetTokenResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetTokenResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -537,7 +537,7 @@ class TokensApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetTokenResponseModel',
+                        '\Tns\EpayPolicy\Model\GetTokenResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -591,7 +591,7 @@ class TokensApi
      */
     public function tokensGetAsyncWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['tokensGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetTokenResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetTokenResponseModel';
         $request = $this->tokensGetRequest($id, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -737,11 +737,11 @@ class TokensApi
      *
      * Stores a token for either ACH or credit card payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -755,11 +755,11 @@ class TokensApi
      *
      * Stores a token for either ACH or credit card payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -824,7 +824,7 @@ class TokensApi
      *
      * Stores a token for either ACH or credit card payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensPost'] to see the possible values for this operation
      *
@@ -846,7 +846,7 @@ class TokensApi
      *
      * Stores a token for either ACH or credit card payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensPost'] to see the possible values for this operation
      *
@@ -884,7 +884,7 @@ class TokensApi
     /**
      * Create request for operation 'tokensPost'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTokenRequestModel $post_token_request_model The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['tokensPost'] to see the possible values for this operation
      *

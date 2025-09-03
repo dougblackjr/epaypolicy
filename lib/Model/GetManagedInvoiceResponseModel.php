@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetManagedInvoiceResponseModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -71,11 +71,11 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
         'off_platform_date' => '\DateTime',
         'quick_quote_date' => '\DateTime',
         'email_send_date' => '\DateTime',
-        'line_items' => '\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]',
-        'taxes' => '\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]',
-        'fees' => '\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]',
-        'financing_info' => '\Tns\\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel',
-        'quick_quote' => '\Tns\\EpayPolicy\Model\QuickQuoteModel'
+        'line_items' => '\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]',
+        'taxes' => '\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]',
+        'fees' => '\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]',
+        'financing_info' => '\Tns\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel',
+        'quick_quote' => '\Tns\EpayPolicy\Model\QuickQuoteModel'
     ];
 
     /**
@@ -763,7 +763,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets line_items
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
      */
     public function getLineItems()
     {
@@ -773,7 +773,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets line_items
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $line_items line_items
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $line_items line_items
      *
      * @return self
      */
@@ -790,7 +790,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets taxes
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
      */
     public function getTaxes()
     {
@@ -800,7 +800,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets taxes
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $taxes taxes
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $taxes taxes
      *
      * @return self
      */
@@ -817,7 +817,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets fees
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
      */
     public function getFees()
     {
@@ -827,7 +827,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets fees
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $fees fees
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $fees fees
      *
      * @return self
      */
@@ -844,7 +844,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets financing_info
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel|null
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel|null
      */
     public function getFinancingInfo()
     {
@@ -854,7 +854,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets financing_info
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel|null $financing_info financing_info
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceFinancingInfoModel|null $financing_info financing_info
      *
      * @return self
      */
@@ -871,7 +871,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets quick_quote
      *
-     * @return \Tns\\EpayPolicy\Model\QuickQuoteModel|null
+     * @return \Tns\EpayPolicy\Model\QuickQuoteModel|null
      */
     public function getQuickQuote()
     {
@@ -881,7 +881,7 @@ class GetManagedInvoiceResponseModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets quick_quote
      *
-     * @param \Tns\\EpayPolicy\Model\QuickQuoteModel|null $quick_quote quick_quote
+     * @param \Tns\EpayPolicy\Model\QuickQuoteModel|null $quick_quote quick_quote
      *
      * @return self
      */

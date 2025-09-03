@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * FinanceApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,11 +132,11 @@ class FinanceApi
      *
      * ConvertQuote is to convert the given Quote and Creates an AutoPay subscription
      *
-     * @param  \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
+     * @param  \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['financeConvertQuote'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -151,11 +151,11 @@ class FinanceApi
      *
      * ConvertQuote is to convert the given Quote and Creates an AutoPay subscription
      *
-     * @param  \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
+     * @param  \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['financeConvertQuote'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -276,7 +276,7 @@ class FinanceApi
      *
      * ConvertQuote is to convert the given Quote and Creates an AutoPay subscription
      *
-     * @param  \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
+     * @param  \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['financeConvertQuote'] to see the possible values for this operation
      *
@@ -298,7 +298,7 @@ class FinanceApi
      *
      * ConvertQuote is to convert the given Quote and Creates an AutoPay subscription
      *
-     * @param  \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
+     * @param  \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['financeConvertQuote'] to see the possible values for this operation
      *
@@ -349,7 +349,7 @@ class FinanceApi
     /**
      * Create request for operation 'financeConvertQuote'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
+     * @param  \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel $post_convert_quote_request_model Request model which consists of QuoteNumber, TransactionId and AttributeValues (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['financeConvertQuote'] to see the possible values for this operation
      *

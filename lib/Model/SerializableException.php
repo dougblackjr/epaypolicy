@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * SerializableException Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class SerializableException implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         'message' => 'string',
         'stack_trace' => 'string',
-        'inner_serializable_exception' => '\Tns\\EpayPolicy\Model\SerializableException'
+        'inner_serializable_exception' => '\Tns\EpayPolicy\Model\SerializableException'
     ];
 
     /**
@@ -361,7 +361,7 @@ class SerializableException implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets inner_serializable_exception
      *
-     * @return \Tns\\EpayPolicy\Model\SerializableException|null
+     * @return \Tns\EpayPolicy\Model\SerializableException|null
      */
     public function getInnerSerializableException()
     {
@@ -371,7 +371,7 @@ class SerializableException implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets inner_serializable_exception
      *
-     * @param \Tns\\EpayPolicy\Model\SerializableException|null $inner_serializable_exception inner_serializable_exception
+     * @param \Tns\EpayPolicy\Model\SerializableException|null $inner_serializable_exception inner_serializable_exception
      *
      * @return self
      */

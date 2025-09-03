@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * UnderwritingContactModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,7 +70,7 @@ class UnderwritingContactModel implements ModelInterface, ArrayAccess, \JsonSeri
         'city' => 'string',
         'postal_code' => 'string',
         'country' => 'string',
-        'countries' => '\Tns\\EpayPolicy\Model\LookUpModelByte[]',
+        'countries' => '\Tns\EpayPolicy\Model\LookUpModelByte[]',
         'address_without_suite' => 'string',
         'address_with_suite' => 'string',
         'address_with_suite_and_country' => 'string',
@@ -885,7 +885,7 @@ class UnderwritingContactModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets countries
      *
-     * @return \Tns\\EpayPolicy\Model\LookUpModelByte[]|null
+     * @return \Tns\EpayPolicy\Model\LookUpModelByte[]|null
      */
     public function getCountries()
     {
@@ -895,7 +895,7 @@ class UnderwritingContactModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets countries
      *
-     * @param \Tns\\EpayPolicy\Model\LookUpModelByte[]|null $countries countries
+     * @param \Tns\EpayPolicy\Model\LookUpModelByte[]|null $countries countries
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetAutoPaysResponseModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetAutoPaysResponseModel implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'auto_pays' => '\Tns\\EpayPolicy\Model\GetAutoPayResponseModel[]',
+        'auto_pays' => '\Tns\EpayPolicy\Model\GetAutoPayResponseModel[]',
         'total_records' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetAutoPaysResponseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets auto_pays
      *
-     * @return \Tns\\EpayPolicy\Model\GetAutoPayResponseModel[]|null
+     * @return \Tns\EpayPolicy\Model\GetAutoPayResponseModel[]|null
      */
     public function getAutoPays()
     {
@@ -310,7 +310,7 @@ class GetAutoPaysResponseModel implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets auto_pays
      *
-     * @param \Tns\\EpayPolicy\Model\GetAutoPayResponseModel[]|null $auto_pays auto_pays
+     * @param \Tns\EpayPolicy\Model\GetAutoPayResponseModel[]|null $auto_pays auto_pays
      *
      * @return self
      */

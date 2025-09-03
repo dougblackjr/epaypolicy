@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * PostTokenRequestModel Class Doc Comment
  *
  * @category Class
  * @description Creates a payment token.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class PostTokenRequestModel implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         'payer' => 'string',
         'email_address' => 'string',
-        'credit_card_information' => '\Tns\\EpayPolicy\Model\CreditCardInformationModel',
-        'bank_account_information' => '\Tns\\EpayPolicy\Model\BankAccountInformationModel',
+        'credit_card_information' => '\Tns\EpayPolicy\Model\CreditCardInformationModel',
+        'bank_account_information' => '\Tns\EpayPolicy\Model\BankAccountInformationModel',
         'attribute_values' => 'array<string,string>'
     ];
 
@@ -382,7 +382,7 @@ class PostTokenRequestModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets credit_card_information
      *
-     * @return \Tns\\EpayPolicy\Model\CreditCardInformationModel|null
+     * @return \Tns\EpayPolicy\Model\CreditCardInformationModel|null
      */
     public function getCreditCardInformation()
     {
@@ -392,7 +392,7 @@ class PostTokenRequestModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets credit_card_information
      *
-     * @param \Tns\\EpayPolicy\Model\CreditCardInformationModel|null $credit_card_information credit_card_information
+     * @param \Tns\EpayPolicy\Model\CreditCardInformationModel|null $credit_card_information credit_card_information
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class PostTokenRequestModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets bank_account_information
      *
-     * @return \Tns\\EpayPolicy\Model\BankAccountInformationModel|null
+     * @return \Tns\EpayPolicy\Model\BankAccountInformationModel|null
      */
     public function getBankAccountInformation()
     {
@@ -419,7 +419,7 @@ class PostTokenRequestModel implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets bank_account_information
      *
-     * @param \Tns\\EpayPolicy\Model\BankAccountInformationModel|null $bank_account_information bank_account_information
+     * @param \Tns\EpayPolicy\Model\BankAccountInformationModel|null $bank_account_information bank_account_information
      *
      * @return self
      */

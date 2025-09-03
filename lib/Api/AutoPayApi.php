@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * AutoPayApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -145,7 +145,7 @@ class AutoPayApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayCancel'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -163,7 +163,7 @@ class AutoPayApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayCancel'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -396,9 +396,9 @@ class AutoPayApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetAutoPayResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetAutoPayResponseModel|array<string,object>
      */
     public function autoPayGet($id, $impersonation_account_key = null, string $contentType = self::contentTypes['autoPayGet'][0])
     {
@@ -415,9 +415,9 @@ class AutoPayApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetAutoPayResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetAutoPayResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function autoPayGetWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['autoPayGet'][0])
     {
@@ -460,11 +460,11 @@ class AutoPayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetAutoPayResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetAutoPayResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetAutoPayResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetAutoPayResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -482,7 +482,7 @@ class AutoPayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetAutoPayResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetAutoPayResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -515,7 +515,7 @@ class AutoPayApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetAutoPayResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetAutoPayResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -548,7 +548,7 @@ class AutoPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetAutoPayResponseModel',
+                        '\Tns\EpayPolicy\Model\GetAutoPayResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -602,7 +602,7 @@ class AutoPayApi
      */
     public function autoPayGetAsyncWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['autoPayGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetAutoPayResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetAutoPayResponseModel';
         $request = $this->autoPayGetRequest($id, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -748,11 +748,11 @@ class AutoPayApi
      *
      * Creates an Auto Pay.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -766,11 +766,11 @@ class AutoPayApi
      *
      * Creates an Auto Pay.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -835,7 +835,7 @@ class AutoPayApi
      *
      * Creates an Auto Pay.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayPost'] to see the possible values for this operation
      *
@@ -857,7 +857,7 @@ class AutoPayApi
      *
      * Creates an Auto Pay.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayPost'] to see the possible values for this operation
      *
@@ -895,7 +895,7 @@ class AutoPayApi
     /**
      * Create request for operation 'autoPayPost'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAutoPayRequestModel $post_auto_pay_request_model Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPayPost'] to see the possible values for this operation
      *
@@ -1007,9 +1007,9 @@ class AutoPayApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPaySearch'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetAutoPaysResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetAutoPaysResponseModel|array<string,object>
      */
     public function autoPaySearch($create_date_start = null, $create_date_end = null, $cancel_date_start = null, $cancel_date_end = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['autoPaySearch'][0])
     {
@@ -1031,9 +1031,9 @@ class AutoPayApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['autoPaySearch'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetAutoPaysResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetAutoPaysResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function autoPaySearchWithHttpInfo($create_date_start = null, $create_date_end = null, $cancel_date_start = null, $cancel_date_end = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['autoPaySearch'][0])
     {
@@ -1076,11 +1076,11 @@ class AutoPayApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetAutoPaysResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetAutoPaysResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1098,7 +1098,7 @@ class AutoPayApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetAutoPaysResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1131,7 +1131,7 @@ class AutoPayApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetAutoPaysResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1164,7 +1164,7 @@ class AutoPayApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel',
+                        '\Tns\EpayPolicy\Model\GetAutoPaysResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1228,7 +1228,7 @@ class AutoPayApi
      */
     public function autoPaySearchAsyncWithHttpInfo($create_date_start = null, $create_date_end = null, $cancel_date_start = null, $cancel_date_end = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['autoPaySearch'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetAutoPaysResponseModel';
         $request = $this->autoPaySearchRequest($create_date_start, $create_date_end, $cancel_date_start, $cancel_date_end, $page, $page_size, $impersonation_account_key, $contentType);
 
         return $this->client

@@ -16,9 +16,9 @@ Name | Type | Description | Notes
 **down_payment_amount** | **float** | If finance eligible, the required down payment | [optional]
 **number_of_installments** | **int** | If financed, the number of installment payments. | [optional]
 **installment_amount** | **float** | if financed, the amount of each installment payment. | [optional]
-**attribute_values** | [**\Tns\\EpayPolicy\Model\AttributeValueModel[]**](AttributeValueModel.md) | The actual values of the custom attributes at the invoice level. |
+**attribute_values** | [**\Tns\EpayPolicy\Model\AttributeValueModel[]**](AttributeValueModel.md) | The actual values of the custom attributes at the invoice level. |
 **search_attribute_values** | **array<string,string>** | Attributes used to find this invoice in management system | [optional]
-**invoice_items** | [**\Tns\\EpayPolicy\Model\InvoiceItemModel[]**](InvoiceItemModel.md) | A collection of invoice items. |
+**invoice_items** | [**\Tns\EpayPolicy\Model\InvoiceItemModel[]**](InvoiceItemModel.md) | A collection of invoice items. |
 **policy_effective_date** | **\DateTime** | Effective date of the policy. | [optional]
 **policy_number** | **string** | The policy number. | [optional]
 **is_financing_eligible** | **bool** |  | [optional] [readonly]

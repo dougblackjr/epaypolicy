@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy\Model
+ * @package  Tns\EpayPolicy\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package Tns\\EpayPolicy\Model
+ * @package Tns\EpayPolicy\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

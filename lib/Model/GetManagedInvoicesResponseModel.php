@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetManagedInvoicesResponseModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetManagedInvoicesResponseModel implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'managed_invoices' => '\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel[]',
+        'managed_invoices' => '\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel[]',
         'total_records' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetManagedInvoicesResponseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Gets managed_invoices
      *
-     * @return \Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel[]|null
+     * @return \Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel[]|null
      */
     public function getManagedInvoices()
     {
@@ -310,7 +310,7 @@ class GetManagedInvoicesResponseModel implements ModelInterface, ArrayAccess, \J
     /**
      * Sets managed_invoices
      *
-     * @param \Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel[]|null $managed_invoices managed_invoices
+     * @param \Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel[]|null $managed_invoices managed_invoices
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\TokensApi
+# Tns\EpayPolicy\TokensApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TokensApi(
+$apiInstance = new Tns\EpayPolicy\Api\TokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -73,7 +73,7 @@ void (empty response body)
 ## `tokensGet()`
 
 ```php
-tokensGet($id, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetTokenResponseModel
+tokensGet($id, $impersonation_account_key): \Tns\EpayPolicy\Model\GetTokenResponseModel
 ```
 
 Retrieves the details of a token.
@@ -86,12 +86,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TokensApi(
+$apiInstance = new Tns\EpayPolicy\Api\TokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetTokenResponseModel**](../Model/GetTokenResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetTokenResponseModel**](../Model/GetTokenResponseModel.md)
 
 ### Authorization
 
@@ -148,18 +148,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TokensApi(
+$apiInstance = new Tns\EpayPolicy\Api\TokensApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_token_request_model = new \Tns\\EpayPolicy\Model\PostTokenRequestModel(); // \Tns\\EpayPolicy\Model\PostTokenRequestModel | The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute.
+$post_token_request_model = new \Tns\EpayPolicy\Model\PostTokenRequestModel(); // \Tns\EpayPolicy\Model\PostTokenRequestModel | The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -173,7 +173,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_token_request_model** | [**\Tns\\EpayPolicy\Model\PostTokenRequestModel**](../Model/PostTokenRequestModel.md)| The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. | |
+| **post_token_request_model** | [**\Tns\EpayPolicy\Model\PostTokenRequestModel**](../Model/PostTokenRequestModel.md)| The details of the token to be created. In the response, the Id of the created token is the last part of the URI in the location header attribute. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type

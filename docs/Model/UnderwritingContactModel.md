@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **city** | **string** |  | [optional]
 **postal_code** | **string** |  | [optional]
 **country** | **string** |  | [optional]
-**countries** | [**\Tns\\EpayPolicy\Model\LookUpModelByte[]**](LookUpModelByte.md) |  | [optional]
+**countries** | [**\Tns\EpayPolicy\Model\LookUpModelByte[]**](LookUpModelByte.md) |  | [optional]
 **address_without_suite** | **string** |  | [optional] [readonly]
 **address_with_suite** | **string** |  | [optional] [readonly]
 **address_with_suite_and_country** | **string** |  | [optional] [readonly]

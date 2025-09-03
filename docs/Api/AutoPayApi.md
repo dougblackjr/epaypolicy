@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\AutoPayApi
+# Tns\EpayPolicy\AutoPayApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -26,12 +26,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\AutoPayApi(
+$apiInstance = new Tns\EpayPolicy\Api\AutoPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -74,7 +74,7 @@ void (empty response body)
 ## `autoPayGet()`
 
 ```php
-autoPayGet($id, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetAutoPayResponseModel
+autoPayGet($id, $impersonation_account_key): \Tns\EpayPolicy\Model\GetAutoPayResponseModel
 ```
 
 Retrieves the details of an AutoPay.
@@ -87,12 +87,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\AutoPayApi(
+$apiInstance = new Tns\EpayPolicy\Api\AutoPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetAutoPayResponseModel**](../Model/GetAutoPayResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetAutoPayResponseModel**](../Model/GetAutoPayResponseModel.md)
 
 ### Authorization
 
@@ -149,18 +149,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\AutoPayApi(
+$apiInstance = new Tns\EpayPolicy\Api\AutoPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_auto_pay_request_model = new \Tns\\EpayPolicy\Model\PostAutoPayRequestModel(); // \Tns\\EpayPolicy\Model\PostAutoPayRequestModel | Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute.
+$post_auto_pay_request_model = new \Tns\EpayPolicy\Model\PostAutoPayRequestModel(); // \Tns\EpayPolicy\Model\PostAutoPayRequestModel | Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -174,7 +174,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_auto_pay_request_model** | [**\Tns\\EpayPolicy\Model\PostAutoPayRequestModel**](../Model/PostAutoPayRequestModel.md)| Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. | |
+| **post_auto_pay_request_model** | [**\Tns\EpayPolicy\Model\PostAutoPayRequestModel**](../Model/PostAutoPayRequestModel.md)| Contains the parameters for the auto pay. In the response, the Id of the created auto pay is the last part of the URI in the location header attribute. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type
@@ -197,7 +197,7 @@ void (empty response body)
 ## `autoPaySearch()`
 
 ```php
-autoPaySearch($create_date_start, $create_date_end, $cancel_date_start, $cancel_date_end, $page, $page_size, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetAutoPaysResponseModel
+autoPaySearch($create_date_start, $create_date_end, $cancel_date_start, $cancel_date_end, $page, $page_size, $impersonation_account_key): \Tns\EpayPolicy\Model\GetAutoPaysResponseModel
 ```
 
 Retrieves a list of auto pays based on search parameters.
@@ -210,12 +210,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\AutoPayApi(
+$apiInstance = new Tns\EpayPolicy\Api\AutoPayApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -251,7 +251,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetAutoPaysResponseModel**](../Model/GetAutoPaysResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetAutoPaysResponseModel**](../Model/GetAutoPaysResponseModel.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * InvoicesApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -149,11 +149,11 @@ class InvoicesApi
      *
      * Sends an email for a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesEmail'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -167,11 +167,11 @@ class InvoicesApi
      *
      * Sends an email for a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesEmail'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -228,7 +228,7 @@ class InvoicesApi
      *
      * Sends an email for a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesEmail'] to see the possible values for this operation
      *
@@ -250,7 +250,7 @@ class InvoicesApi
      *
      * Sends an email for a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesEmail'] to see the possible values for this operation
      *
@@ -288,7 +288,7 @@ class InvoicesApi
     /**
      * Create request for operation 'invoicesEmail'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\PostSendInvoiceEmailRequestModel $post_send_invoice_email_request_model The Invoice lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesEmail'] to see the possible values for this operation
      *
@@ -394,7 +394,7 @@ class InvoicesApi
      * @param  string $impersonation_account_key impersonation_account_key (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -411,7 +411,7 @@ class InvoicesApi
      * @param  string $impersonation_account_key (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -614,11 +614,11 @@ class InvoicesApi
      *
      * Updates a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesPayments'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -632,11 +632,11 @@ class InvoicesApi
      *
      * Updates a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesPayments'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -693,7 +693,7 @@ class InvoicesApi
      *
      * Updates a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesPayments'] to see the possible values for this operation
      *
@@ -715,7 +715,7 @@ class InvoicesApi
      *
      * Updates a collection of invoices in the management system.
      *
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesPayments'] to see the possible values for this operation
      *
@@ -753,7 +753,7 @@ class InvoicesApi
     /**
      * Create request for operation 'invoicesPayments'
      *
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesPayments'] to see the possible values for this operation
      *
@@ -857,11 +857,11 @@ class InvoicesApi
      * Updates a collection of invoices in the management system.
      *
      * @param  string $api_version api_version (required)
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesUpdate'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      * @deprecated
@@ -877,11 +877,11 @@ class InvoicesApi
      * Updates a collection of invoices in the management system.
      *
      * @param  string $api_version (required)
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesUpdate'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
@@ -940,7 +940,7 @@ class InvoicesApi
      * Updates a collection of invoices in the management system.
      *
      * @param  string $api_version (required)
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesUpdate'] to see the possible values for this operation
      *
@@ -964,7 +964,7 @@ class InvoicesApi
      * Updates a collection of invoices in the management system.
      *
      * @param  string $api_version (required)
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesUpdate'] to see the possible values for this operation
      *
@@ -1004,7 +1004,7 @@ class InvoicesApi
      * Create request for operation 'invoicesUpdate'
      *
      * @param  string $api_version (required)
-     * @param  \Tns\\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
+     * @param  \Tns\EpayPolicy\Model\UpdateInvoicesRequestModel $update_invoices_request_model The paid invoices and lookup attributes. (required)
      * @param  string $impersonation_account_key The impersonation account key. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['invoicesUpdate'] to see the possible values for this operation
      *

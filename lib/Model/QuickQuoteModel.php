@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * QuickQuoteModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class QuickQuoteModel implements ModelInterface, ArrayAccess, \JsonSerializable
         'finance_ineligibility_reason' => 'string',
         'number_of_installments' => 'int',
         'installment_amount' => 'float',
-        'exception' => '\Tns\\EpayPolicy\Model\SerializableException',
+        'exception' => '\Tns\EpayPolicy\Model\SerializableException',
         'finance_eligibility_hash' => 'string',
         'finance_company_name' => 'string'
     ];
@@ -511,7 +511,7 @@ class QuickQuoteModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets exception
      *
-     * @return \Tns\\EpayPolicy\Model\SerializableException|null
+     * @return \Tns\EpayPolicy\Model\SerializableException|null
      */
     public function getException()
     {
@@ -521,7 +521,7 @@ class QuickQuoteModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets exception
      *
-     * @param \Tns\\EpayPolicy\Model\SerializableException|null $exception exception
+     * @param \Tns\EpayPolicy\Model\SerializableException|null $exception exception
      *
      * @return self
      */

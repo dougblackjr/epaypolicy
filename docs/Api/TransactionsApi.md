@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\TransactionsApi
+# Tns\EpayPolicy\TransactionsApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -28,18 +28,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionsApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_authorize_transaction_request_model = new \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel(); // \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel | The details of the transaction to be authorized.
+$post_authorize_transaction_request_model = new \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel(); // \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel | The details of the transaction to be authorized.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -53,7 +53,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_authorize_transaction_request_model** | [**\Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel**](../Model/PostAuthorizeTransactionRequestModel.md)| The details of the transaction to be authorized. | |
+| **post_authorize_transaction_request_model** | [**\Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel**](../Model/PostAuthorizeTransactionRequestModel.md)| The details of the transaction to be authorized. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type
@@ -76,7 +76,7 @@ void (empty response body)
 ## `transactionsGet()`
 
 ```php
-transactionsGet($id, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetTransactionResponseModel
+transactionsGet($id, $impersonation_account_key): \Tns\EpayPolicy\Model\GetTransactionResponseModel
 ```
 
 Retrieves the details of a transaction.
@@ -89,12 +89,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionsApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -120,7 +120,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetTransactionResponseModel**](../Model/GetTransactionResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetTransactionResponseModel**](../Model/GetTransactionResponseModel.md)
 
 ### Authorization
 
@@ -151,18 +151,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionsApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_transaction_request_model = new \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1(); // \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1 | The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute.
+$post_transaction_request_model = new \Tns\EpayPolicy\Model\PostTransactionRequestModelV1(); // \Tns\EpayPolicy\Model\PostTransactionRequestModelV1 | The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -176,7 +176,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_transaction_request_model** | [**\Tns\\EpayPolicy\Model\PostTransactionRequestModelV1**](../Model/PostTransactionRequestModelV1.md)| The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. | |
+| **post_transaction_request_model** | [**\Tns\EpayPolicy\Model\PostTransactionRequestModelV1**](../Model/PostTransactionRequestModelV1.md)| The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type
@@ -212,19 +212,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionsApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | The Id of the transaction.
-$post_refund_transaction_request_model = new \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel(); // \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel | The details of how to process the refund.
+$post_refund_transaction_request_model = new \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel(); // \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel | The details of how to process the refund.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -239,7 +239,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**| The Id of the transaction. | |
-| **post_refund_transaction_request_model** | [**\Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel**](../Model/PostRefundTransactionRequestModel.md)| The details of how to process the refund. | |
+| **post_refund_transaction_request_model** | [**\Tns\EpayPolicy\Model\PostRefundTransactionRequestModel**](../Model/PostRefundTransactionRequestModel.md)| The details of how to process the refund. | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type
@@ -262,7 +262,7 @@ void (empty response body)
 ## `transactionsSearch()`
 
 ```php
-transactionsSearch($begin_date, $end_date, $begin_create_date, $end_create_date, $transaction_search_type_id, $min_amount, $max_amount, $account_number, $payer_name, $batch_id, $page, $page_size, $impersonation_account_key): \Tns\\EpayPolicy\Model\GetTransactionsResponseModel
+transactionsSearch($begin_date, $end_date, $begin_create_date, $end_create_date, $transaction_search_type_id, $min_amount, $max_amount, $account_number, $payer_name, $batch_id, $page, $page_size, $impersonation_account_key): \Tns\EpayPolicy\Model\GetTransactionsResponseModel
 ```
 
 Retrieves a list of Transactions based on search parameters.
@@ -275,12 +275,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionsApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -328,7 +328,7 @@ try {
 
 ### Return type
 
-[**\Tns\\EpayPolicy\Model\GetTransactionsResponseModel**](../Model/GetTransactionsResponseModel.md)
+[**\Tns\EpayPolicy\Model\GetTransactionsResponseModel**](../Model/GetTransactionsResponseModel.md)
 
 ### Authorization
 
@@ -359,19 +359,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\TransactionsApi(
+$apiInstance = new Tns\EpayPolicy\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | The Id of the transaction.
-$post_void_transaction_request_model = new \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel(); // \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel | The details of how to process the void.
+$post_void_transaction_request_model = new \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel(); // \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel | The details of how to process the void.
 $send_receipt = True; // bool | [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void.
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
@@ -387,7 +387,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **int**| The Id of the transaction. | |
-| **post_void_transaction_request_model** | [**\Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel**](../Model/PostVoidTransactionRequestModel.md)| The details of how to process the void. | |
+| **post_void_transaction_request_model** | [**\Tns\EpayPolicy\Model\PostVoidTransactionRequestModel**](../Model/PostVoidTransactionRequestModel.md)| The details of how to process the void. | |
 | **send_receipt** | **bool**| [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void. | [optional] |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 

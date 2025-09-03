@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * PostCreateManagedInvoicesFinanceRequestModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,9 +66,9 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
         'minimum_earned_percentage' => 'float',
         'number_of_days_to_cancel' => 'int',
         'invoice_auditable' => 'bool',
-        'insured_contact' => '\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel',
-        'carrier_contact' => '\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel',
-        'mga_contact' => '\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel'
+        'insured_contact' => '\Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel',
+        'carrier_contact' => '\Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel',
+        'mga_contact' => '\Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel'
     ];
 
     /**
@@ -629,7 +629,7 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
     /**
      * Gets insured_contact
      *
-     * @return \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel
+     * @return \Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel
      */
     public function getInsuredContact()
     {
@@ -639,7 +639,7 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
     /**
      * Sets insured_contact
      *
-     * @param \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel $insured_contact insured_contact
+     * @param \Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel $insured_contact insured_contact
      *
      * @return self
      */
@@ -656,7 +656,7 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
     /**
      * Gets carrier_contact
      *
-     * @return \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel
+     * @return \Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel
      */
     public function getCarrierContact()
     {
@@ -666,7 +666,7 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
     /**
      * Sets carrier_contact
      *
-     * @param \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel $carrier_contact carrier_contact
+     * @param \Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel $carrier_contact carrier_contact
      *
      * @return self
      */
@@ -683,7 +683,7 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
     /**
      * Gets mga_contact
      *
-     * @return \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel|null
+     * @return \Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel|null
      */
     public function getMgaContact()
     {
@@ -693,7 +693,7 @@ class PostCreateManagedInvoicesFinanceRequestModel implements ModelInterface, Ar
     /**
      * Sets mga_contact
      *
-     * @param \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesContactModel|null $mga_contact mga_contact
+     * @param \Tns\EpayPolicy\Model\PostCreateManagedInvoicesContactModel|null $mga_contact mga_contact
      *
      * @return self
      */

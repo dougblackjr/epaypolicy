@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * PaymentSchedulesApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -142,7 +142,7 @@ class PaymentSchedulesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesCancel'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -160,7 +160,7 @@ class PaymentSchedulesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesCancel'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -393,9 +393,9 @@ class PaymentSchedulesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel|array<string,object>
      */
     public function paymentSchedulesGet($id, $impersonation_account_key = null, string $contentType = self::contentTypes['paymentSchedulesGet'][0])
     {
@@ -412,9 +412,9 @@ class PaymentSchedulesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function paymentSchedulesGetWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['paymentSchedulesGet'][0])
     {
@@ -457,11 +457,11 @@ class PaymentSchedulesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -479,7 +479,7 @@ class PaymentSchedulesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -512,7 +512,7 @@ class PaymentSchedulesApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -545,7 +545,7 @@ class PaymentSchedulesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel',
+                        '\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -599,7 +599,7 @@ class PaymentSchedulesApi
      */
     public function paymentSchedulesGetAsyncWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['paymentSchedulesGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetPaymentScheduleResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetPaymentScheduleResponseModel';
         $request = $this->paymentSchedulesGetRequest($id, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -745,11 +745,11 @@ class PaymentSchedulesApi
      *
      * Creates a payment schedule for a delayed payment or recurring payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -763,11 +763,11 @@ class PaymentSchedulesApi
      *
      * Creates a payment schedule for a delayed payment or recurring payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -832,7 +832,7 @@ class PaymentSchedulesApi
      *
      * Creates a payment schedule for a delayed payment or recurring payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesPost'] to see the possible values for this operation
      *
@@ -854,7 +854,7 @@ class PaymentSchedulesApi
      *
      * Creates a payment schedule for a delayed payment or recurring payments.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesPost'] to see the possible values for this operation
      *
@@ -892,7 +892,7 @@ class PaymentSchedulesApi
     /**
      * Create request for operation 'paymentSchedulesPost'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostPaymentScheduleRequestModel $post_payment_schedule_request_model Contains the parameters for the payment schedule. In the response, the Id of the created payment schedule is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction(s) will be processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['paymentSchedulesPost'] to see the possible values for this operation
      *

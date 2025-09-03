@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * TransactionsApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -159,11 +159,11 @@ class TransactionsApi
      *
      * Creates an authorization on a credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsAuthorize'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -177,11 +177,11 @@ class TransactionsApi
      *
      * Creates an authorization on a credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsAuthorize'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -231,7 +231,7 @@ class TransactionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostAuthorizeTransactionResponseModel',
+                        '\Tns\EpayPolicy\Model\PostAuthorizeTransactionResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -246,7 +246,7 @@ class TransactionsApi
      *
      * Creates an authorization on a credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsAuthorize'] to see the possible values for this operation
      *
@@ -268,7 +268,7 @@ class TransactionsApi
      *
      * Creates an authorization on a credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsAuthorize'] to see the possible values for this operation
      *
@@ -306,7 +306,7 @@ class TransactionsApi
     /**
      * Create request for operation 'transactionsAuthorize'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
+     * @param  \Tns\EpayPolicy\Model\PostAuthorizeTransactionRequestModel $post_authorize_transaction_request_model The details of the transaction to be authorized. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsAuthorize'] to see the possible values for this operation
      *
@@ -413,9 +413,9 @@ class TransactionsApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetTransactionResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetTransactionResponseModel|array<string,object>
      */
     public function transactionsGet($id, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionsGet'][0])
     {
@@ -432,9 +432,9 @@ class TransactionsApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetTransactionResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetTransactionResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function transactionsGetWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionsGet'][0])
     {
@@ -477,11 +477,11 @@ class TransactionsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetTransactionResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetTransactionResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetTransactionResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetTransactionResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -499,7 +499,7 @@ class TransactionsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetTransactionResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetTransactionResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -532,7 +532,7 @@ class TransactionsApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetTransactionResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetTransactionResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -565,7 +565,7 @@ class TransactionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetTransactionResponseModel',
+                        '\Tns\EpayPolicy\Model\GetTransactionResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class TransactionsApi
      */
     public function transactionsGetAsyncWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionsGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetTransactionResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetTransactionResponseModel';
         $request = $this->transactionsGetRequest($id, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -765,11 +765,11 @@ class TransactionsApi
      *
      * Processes a sale transaction for either ACH or credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -783,11 +783,11 @@ class TransactionsApi
      *
      * Processes a sale transaction for either ACH or credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -837,7 +837,7 @@ class TransactionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostTransactionResponseModel',
+                        '\Tns\EpayPolicy\Model\PostTransactionResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -852,7 +852,7 @@ class TransactionsApi
      *
      * Processes a sale transaction for either ACH or credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsPost'] to see the possible values for this operation
      *
@@ -874,7 +874,7 @@ class TransactionsApi
      *
      * Processes a sale transaction for either ACH or credit card.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsPost'] to see the possible values for this operation
      *
@@ -912,7 +912,7 @@ class TransactionsApi
     /**
      * Create request for operation 'transactionsPost'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostTransactionRequestModelV1 $post_transaction_request_model The details of the transaction to be processed. In the response, the Id of the created transaction is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsPost'] to see the possible values for this operation
      *
@@ -1016,11 +1016,11 @@ class TransactionsApi
      * Processes a refund of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
+     * @param  \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsRefund'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1035,11 +1035,11 @@ class TransactionsApi
      * Processes a refund of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
+     * @param  \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsRefund'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1089,7 +1089,7 @@ class TransactionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostRefundTransactionResponseModel',
+                        '\Tns\EpayPolicy\Model\PostRefundTransactionResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1105,7 +1105,7 @@ class TransactionsApi
      * Processes a refund of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
+     * @param  \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsRefund'] to see the possible values for this operation
      *
@@ -1128,7 +1128,7 @@ class TransactionsApi
      * Processes a refund of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
+     * @param  \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsRefund'] to see the possible values for this operation
      *
@@ -1167,7 +1167,7 @@ class TransactionsApi
      * Create request for operation 'transactionsRefund'
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
+     * @param  \Tns\EpayPolicy\Model\PostRefundTransactionRequestModel $post_refund_transaction_request_model The details of how to process the refund. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsRefund'] to see the possible values for this operation
      *
@@ -1300,9 +1300,9 @@ class TransactionsApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsSearch'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetTransactionsResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetTransactionsResponseModel|array<string,object>
      */
     public function transactionsSearch($begin_date = null, $end_date = null, $begin_create_date = null, $end_create_date = null, $transaction_search_type_id = null, $min_amount = null, $max_amount = null, $account_number = null, $payer_name = null, $batch_id = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionsSearch'][0])
     {
@@ -1330,9 +1330,9 @@ class TransactionsApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsSearch'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetTransactionsResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetTransactionsResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function transactionsSearchWithHttpInfo($begin_date = null, $end_date = null, $begin_create_date = null, $end_create_date = null, $transaction_search_type_id = null, $min_amount = null, $max_amount = null, $account_number = null, $payer_name = null, $batch_id = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionsSearch'][0])
     {
@@ -1375,11 +1375,11 @@ class TransactionsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetTransactionsResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetTransactionsResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetTransactionsResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetTransactionsResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1397,7 +1397,7 @@ class TransactionsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetTransactionsResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetTransactionsResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1430,7 +1430,7 @@ class TransactionsApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetTransactionsResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetTransactionsResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1463,7 +1463,7 @@ class TransactionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetTransactionsResponseModel',
+                        '\Tns\EpayPolicy\Model\GetTransactionsResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1539,7 +1539,7 @@ class TransactionsApi
      */
     public function transactionsSearchAsyncWithHttpInfo($begin_date = null, $end_date = null, $begin_create_date = null, $end_create_date = null, $transaction_search_type_id = null, $min_amount = null, $max_amount = null, $account_number = null, $payer_name = null, $batch_id = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionsSearch'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetTransactionsResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetTransactionsResponseModel';
         $request = $this->transactionsSearchRequest($begin_date, $end_date, $begin_create_date, $end_create_date, $transaction_search_type_id, $min_amount, $max_amount, $account_number, $payer_name, $batch_id, $page, $page_size, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -1802,12 +1802,12 @@ class TransactionsApi
      * Processes a void of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
+     * @param  \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
      * @param  bool $send_receipt [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void. (optional)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsVoid'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1822,12 +1822,12 @@ class TransactionsApi
      * Processes a void of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
+     * @param  \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
      * @param  bool $send_receipt [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void. (optional)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsVoid'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1877,7 +1877,7 @@ class TransactionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostVoidTransactionResponseModel',
+                        '\Tns\EpayPolicy\Model\PostVoidTransactionResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1893,7 +1893,7 @@ class TransactionsApi
      * Processes a void of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
+     * @param  \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
      * @param  bool $send_receipt [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void. (optional)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsVoid'] to see the possible values for this operation
@@ -1917,7 +1917,7 @@ class TransactionsApi
      * Processes a void of a transaction.
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
+     * @param  \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
      * @param  bool $send_receipt [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void. (optional)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsVoid'] to see the possible values for this operation
@@ -1957,7 +1957,7 @@ class TransactionsApi
      * Create request for operation 'transactionsVoid'
      *
      * @param  int $id The Id of the transaction. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
+     * @param  \Tns\EpayPolicy\Model\PostVoidTransactionRequestModel $post_void_transaction_request_model The details of how to process the void. (required)
      * @param  bool $send_receipt [Deprecated. Please use the postVoidTransactionRequestModel parameter.] Set to true if a receipt should be sent to all parties upon a successful void. (optional)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the transaction is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionsVoid'] to see the possible values for this operation

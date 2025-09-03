@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * ManagedInvoicesApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -149,11 +149,11 @@ class ManagedInvoicesApi
      * Creates Managed Invoice with Financing.
      *
      * @param  string $id The public id of the managed invoice to be edited. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesFinance'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -168,11 +168,11 @@ class ManagedInvoicesApi
      * Creates Managed Invoice with Financing.
      *
      * @param  string $id The public id of the managed invoice to be edited. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesFinance'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -222,7 +222,7 @@ class ManagedInvoicesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel',
+                        '\Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class ManagedInvoicesApi
      * Creates Managed Invoice with Financing.
      *
      * @param  string $id The public id of the managed invoice to be edited. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesFinance'] to see the possible values for this operation
      *
@@ -261,7 +261,7 @@ class ManagedInvoicesApi
      * Creates Managed Invoice with Financing.
      *
      * @param  string $id The public id of the managed invoice to be edited. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesFinance'] to see the possible values for this operation
      *
@@ -300,7 +300,7 @@ class ManagedInvoicesApi
      * Create request for operation 'managedInvoicesFinance'
      *
      * @param  string $id The public id of the managed invoice to be edited. (required)
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesFinanceRequestModel $post_create_managed_invoices_finance_request_model The details of the Quote/Invoice to be created. In the response, the Id of the created Quote/Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the quote/invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesFinance'] to see the possible values for this operation
      *
@@ -422,9 +422,9 @@ class ManagedInvoicesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel|array<string,object>
      */
     public function managedInvoicesGet($id, $impersonation_account_key = null, string $contentType = self::contentTypes['managedInvoicesGet'][0])
     {
@@ -441,9 +441,9 @@ class ManagedInvoicesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function managedInvoicesGetWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['managedInvoicesGet'][0])
     {
@@ -486,11 +486,11 @@ class ManagedInvoicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -508,7 +508,7 @@ class ManagedInvoicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -541,7 +541,7 @@ class ManagedInvoicesApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -574,7 +574,7 @@ class ManagedInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel',
+                        '\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -628,7 +628,7 @@ class ManagedInvoicesApi
      */
     public function managedInvoicesGetAsyncWithHttpInfo($id, $impersonation_account_key = null, string $contentType = self::contentTypes['managedInvoicesGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetManagedInvoiceResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetManagedInvoiceResponseModel';
         $request = $this->managedInvoicesGetRequest($id, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -774,11 +774,11 @@ class ManagedInvoicesApi
      *
      * Creates Managed Invoice.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -792,11 +792,11 @@ class ManagedInvoicesApi
      *
      * Creates Managed Invoice.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesPost'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -846,7 +846,7 @@ class ManagedInvoicesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel',
+                        '\Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -861,7 +861,7 @@ class ManagedInvoicesApi
      *
      * Creates Managed Invoice.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesPost'] to see the possible values for this operation
      *
@@ -883,7 +883,7 @@ class ManagedInvoicesApi
      *
      * Creates Managed Invoice.
      *
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesPost'] to see the possible values for this operation
      *
@@ -921,7 +921,7 @@ class ManagedInvoicesApi
     /**
      * Create request for operation 'managedInvoicesPost'
      *
-     * @param  \Tns\\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
+     * @param  \Tns\EpayPolicy\Model\PostCreateManagedInvoicesRequestModel $post_create_managed_invoices_request_model The details of the Managed Invoice to be created. In the response, the Id of the created Managed Invoice is the last part of the URI in the location header attribute. (required)
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being created. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesPost'] to see the possible values for this operation
      *
@@ -1034,9 +1034,9 @@ class ManagedInvoicesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesSearch'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel|array<string,object>
      */
     public function managedInvoicesSearch($payer_name = null, $created_by = null, $due_date_from = null, $due_date_to = null, $managed_invoice_search_status_type = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['managedInvoicesSearch'][0])
     {
@@ -1059,9 +1059,9 @@ class ManagedInvoicesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesSearch'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function managedInvoicesSearchWithHttpInfo($payer_name = null, $created_by = null, $due_date_from = null, $due_date_to = null, $managed_invoice_search_status_type = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['managedInvoicesSearch'][0])
     {
@@ -1104,11 +1104,11 @@ class ManagedInvoicesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1126,7 +1126,7 @@ class ManagedInvoicesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1159,7 +1159,7 @@ class ManagedInvoicesApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1192,7 +1192,7 @@ class ManagedInvoicesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel',
+                        '\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1258,7 +1258,7 @@ class ManagedInvoicesApi
      */
     public function managedInvoicesSearchAsyncWithHttpInfo($payer_name = null, $created_by = null, $due_date_from = null, $due_date_to = null, $managed_invoice_search_status_type = null, $page = null, $page_size = null, $impersonation_account_key = null, string $contentType = self::contentTypes['managedInvoicesSearch'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetManagedInvoicesResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetManagedInvoicesResponseModel';
         $request = $this->managedInvoicesSearchRequest($payer_name, $created_by, $due_date_from, $due_date_to, $managed_invoice_search_status_type, $page, $page_size, $impersonation_account_key, $contentType);
 
         return $this->client
@@ -1469,7 +1469,7 @@ class ManagedInvoicesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesVoid'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1487,7 +1487,7 @@ class ManagedInvoicesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the managed invoice is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['managedInvoicesVoid'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1537,7 +1537,7 @@ class ManagedInvoicesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\PostVoidManagedInvoiceResponseModel',
+                        '\Tns\EpayPolicy\Model\PostVoidManagedInvoiceResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

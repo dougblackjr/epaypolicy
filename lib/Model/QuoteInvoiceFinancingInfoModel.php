@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * QuoteInvoiceFinancingInfoModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,9 +63,9 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
         'minimum_earned_percentage' => 'float',
         'number_of_days_to_cancel' => 'int',
         'invoice_auditable' => 'bool',
-        'insured_contact' => '\Tns\\EpayPolicy\Model\UnderwritingContactModel',
-        'carrier_contact' => '\Tns\\EpayPolicy\Model\UnderwritingContactModel',
-        'mga_contact' => '\Tns\\EpayPolicy\Model\UnderwritingContactModel'
+        'insured_contact' => '\Tns\EpayPolicy\Model\UnderwritingContactModel',
+        'carrier_contact' => '\Tns\EpayPolicy\Model\UnderwritingContactModel',
+        'mga_contact' => '\Tns\EpayPolicy\Model\UnderwritingContactModel'
     ];
 
     /**
@@ -515,7 +515,7 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets insured_contact
      *
-     * @return \Tns\\EpayPolicy\Model\UnderwritingContactModel|null
+     * @return \Tns\EpayPolicy\Model\UnderwritingContactModel|null
      */
     public function getInsuredContact()
     {
@@ -525,7 +525,7 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets insured_contact
      *
-     * @param \Tns\\EpayPolicy\Model\UnderwritingContactModel|null $insured_contact insured_contact
+     * @param \Tns\EpayPolicy\Model\UnderwritingContactModel|null $insured_contact insured_contact
      *
      * @return self
      */
@@ -542,7 +542,7 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets carrier_contact
      *
-     * @return \Tns\\EpayPolicy\Model\UnderwritingContactModel|null
+     * @return \Tns\EpayPolicy\Model\UnderwritingContactModel|null
      */
     public function getCarrierContact()
     {
@@ -552,7 +552,7 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets carrier_contact
      *
-     * @param \Tns\\EpayPolicy\Model\UnderwritingContactModel|null $carrier_contact carrier_contact
+     * @param \Tns\EpayPolicy\Model\UnderwritingContactModel|null $carrier_contact carrier_contact
      *
      * @return self
      */
@@ -569,7 +569,7 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets mga_contact
      *
-     * @return \Tns\\EpayPolicy\Model\UnderwritingContactModel|null
+     * @return \Tns\EpayPolicy\Model\UnderwritingContactModel|null
      */
     public function getMgaContact()
     {
@@ -579,7 +579,7 @@ class QuoteInvoiceFinancingInfoModel implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets mga_contact
      *
-     * @param \Tns\\EpayPolicy\Model\UnderwritingContactModel|null $mga_contact mga_contact
+     * @param \Tns\EpayPolicy\Model\UnderwritingContactModel|null $mga_contact mga_contact
      *
      * @return self
      */

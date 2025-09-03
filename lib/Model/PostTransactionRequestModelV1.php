@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * PostTransactionRequestModelV1 Class Doc Comment
  *
  * @category Class
  * @description Represents a financial transaction.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -66,8 +66,8 @@ class PostTransactionRequestModelV1 implements ModelInterface, ArrayAccess, \Jso
         'comments' => 'string',
         'email_address' => 'string',
         'token_id' => 'string',
-        'credit_card_information' => '\Tns\\EpayPolicy\Model\CreditCardInformationModel',
-        'bank_account_information' => '\Tns\\EpayPolicy\Model\BankAccountInformationModel',
+        'credit_card_information' => '\Tns\EpayPolicy\Model\CreditCardInformationModel',
+        'bank_account_information' => '\Tns\EpayPolicy\Model\BankAccountInformationModel',
         'authorization_id' => 'string',
         'send_receipt' => 'bool',
         'initiating_party_fee' => 'float',
@@ -634,7 +634,7 @@ class PostTransactionRequestModelV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets credit_card_information
      *
-     * @return \Tns\\EpayPolicy\Model\CreditCardInformationModel|null
+     * @return \Tns\EpayPolicy\Model\CreditCardInformationModel|null
      */
     public function getCreditCardInformation()
     {
@@ -644,7 +644,7 @@ class PostTransactionRequestModelV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets credit_card_information
      *
-     * @param \Tns\\EpayPolicy\Model\CreditCardInformationModel|null $credit_card_information credit_card_information
+     * @param \Tns\EpayPolicy\Model\CreditCardInformationModel|null $credit_card_information credit_card_information
      *
      * @return self
      */
@@ -661,7 +661,7 @@ class PostTransactionRequestModelV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets bank_account_information
      *
-     * @return \Tns\\EpayPolicy\Model\BankAccountInformationModel|null
+     * @return \Tns\EpayPolicy\Model\BankAccountInformationModel|null
      */
     public function getBankAccountInformation()
     {
@@ -671,7 +671,7 @@ class PostTransactionRequestModelV1 implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets bank_account_information
      *
-     * @param \Tns\\EpayPolicy\Model\BankAccountInformationModel|null $bank_account_information bank_account_information
+     * @param \Tns\EpayPolicy\Model\BankAccountInformationModel|null $bank_account_information bank_account_information
      *
      * @return self
      */

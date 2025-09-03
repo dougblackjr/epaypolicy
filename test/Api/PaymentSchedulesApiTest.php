@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Tns\\EpayPolicy\Test\Api;
+namespace Tns\EpayPolicy\Test\Api;
 
-use \Tns\\EpayPolicy\Configuration;
-use \Tns\\EpayPolicy\ApiException;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\Configuration;
+use \Tns\EpayPolicy\ApiException;
+use \Tns\EpayPolicy\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * PaymentSchedulesApiTest Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

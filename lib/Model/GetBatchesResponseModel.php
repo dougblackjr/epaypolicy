@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetBatchesResponseModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetBatchesResponseModel implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'batches' => '\Tns\\EpayPolicy\Model\BatchListItemModel[]',
+        'batches' => '\Tns\EpayPolicy\Model\BatchListItemModel[]',
         'total_records' => 'int'
     ];
 
@@ -300,7 +300,7 @@ class GetBatchesResponseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets batches
      *
-     * @return \Tns\\EpayPolicy\Model\BatchListItemModel[]|null
+     * @return \Tns\EpayPolicy\Model\BatchListItemModel[]|null
      */
     public function getBatches()
     {
@@ -310,7 +310,7 @@ class GetBatchesResponseModel implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets batches
      *
-     * @param \Tns\\EpayPolicy\Model\BatchListItemModel[]|null $batches batches
+     * @param \Tns\EpayPolicy\Model\BatchListItemModel[]|null $batches batches
      *
      * @return self
      */

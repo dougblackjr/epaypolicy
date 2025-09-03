@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * InvoiceItemModel Class Doc Comment
  *
  * @category Class
  * @description Holds information for an individual invoice item.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class InvoiceItemModel implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'attribute_values' => '\Tns\\EpayPolicy\Model\AttributeValueModel[]'
+        'attribute_values' => '\Tns\EpayPolicy\Model\AttributeValueModel[]'
     ];
 
     /**
@@ -334,7 +334,7 @@ class InvoiceItemModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attribute_values
      *
-     * @return \Tns\\EpayPolicy\Model\AttributeValueModel[]
+     * @return \Tns\EpayPolicy\Model\AttributeValueModel[]
      */
     public function getAttributeValues()
     {
@@ -344,7 +344,7 @@ class InvoiceItemModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attribute_values
      *
-     * @param \Tns\\EpayPolicy\Model\AttributeValueModel[] $attribute_values A collection of custom attribute values.
+     * @param \Tns\EpayPolicy\Model\AttributeValueModel[] $attribute_values A collection of custom attribute values.
      *
      * @return self
      */

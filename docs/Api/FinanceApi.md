@@ -1,4 +1,4 @@
-# Tns\\EpayPolicy\FinanceApi
+# Tns\EpayPolicy\FinanceApi
 
 All URIs are relative to https://api-sandbox.epaypolicy.com:443, except if the operation defines another base path.
 
@@ -23,18 +23,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basic
-$config = Tns\\EpayPolicy\Configuration::getDefaultConfiguration()
+$config = Tns\EpayPolicy\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new Tns\\EpayPolicy\Api\FinanceApi(
+$apiInstance = new Tns\EpayPolicy\Api\FinanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$post_convert_quote_request_model = new \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel(); // \Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel | Request model which consists of QuoteNumber, TransactionId and AttributeValues
+$post_convert_quote_request_model = new \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel(); // \Tns\EpayPolicy\Model\PostConvertQuoteRequestModel | Request model which consists of QuoteNumber, TransactionId and AttributeValues
 $impersonation_account_key = 'impersonation_account_key_example'; // string | The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request.
 
 try {
@@ -49,7 +49,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_convert_quote_request_model** | [**\Tns\\EpayPolicy\Model\PostConvertQuoteRequestModel**](../Model/PostConvertQuoteRequestModel.md)| Request model which consists of QuoteNumber, TransactionId and AttributeValues | |
+| **post_convert_quote_request_model** | [**\Tns\EpayPolicy\Model\PostConvertQuoteRequestModel**](../Model/PostConvertQuoteRequestModel.md)| Request model which consists of QuoteNumber, TransactionId and AttributeValues | |
 | **impersonation_account_key** | **string**| The key that allows impersonation of another account for which the token is being processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. | [optional] |
 
 ### Return type

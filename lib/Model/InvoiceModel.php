@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * InvoiceModel Class Doc Comment
  *
  * @category Class
  * @description Describes the details of an individual invoice.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -71,9 +71,9 @@ class InvoiceModel implements ModelInterface, ArrayAccess, \JsonSerializable
         'down_payment_amount' => 'float',
         'number_of_installments' => 'int',
         'installment_amount' => 'float',
-        'attribute_values' => '\Tns\\EpayPolicy\Model\AttributeValueModel[]',
+        'attribute_values' => '\Tns\EpayPolicy\Model\AttributeValueModel[]',
         'search_attribute_values' => 'array<string,string>',
-        'invoice_items' => '\Tns\\EpayPolicy\Model\InvoiceItemModel[]',
+        'invoice_items' => '\Tns\EpayPolicy\Model\InvoiceItemModel[]',
         'policy_effective_date' => '\DateTime',
         'policy_number' => 'string',
         'is_financing_eligible' => 'bool',
@@ -773,7 +773,7 @@ class InvoiceModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attribute_values
      *
-     * @return \Tns\\EpayPolicy\Model\AttributeValueModel[]
+     * @return \Tns\EpayPolicy\Model\AttributeValueModel[]
      */
     public function getAttributeValues()
     {
@@ -783,7 +783,7 @@ class InvoiceModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attribute_values
      *
-     * @param \Tns\\EpayPolicy\Model\AttributeValueModel[] $attribute_values The actual values of the custom attributes at the invoice level.
+     * @param \Tns\EpayPolicy\Model\AttributeValueModel[] $attribute_values The actual values of the custom attributes at the invoice level.
      *
      * @return self
      */
@@ -827,7 +827,7 @@ class InvoiceModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice_items
      *
-     * @return \Tns\\EpayPolicy\Model\InvoiceItemModel[]
+     * @return \Tns\EpayPolicy\Model\InvoiceItemModel[]
      */
     public function getInvoiceItems()
     {
@@ -837,7 +837,7 @@ class InvoiceModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice_items
      *
-     * @param \Tns\\EpayPolicy\Model\InvoiceItemModel[] $invoice_items A collection of invoice items.
+     * @param \Tns\EpayPolicy\Model\InvoiceItemModel[] $invoice_items A collection of invoice items.
      *
      * @return self
      */

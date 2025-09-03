@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * TransactionFeesApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,9 +132,9 @@ class TransactionFeesApi
      * @param  string $impersonation_account_key impersonation_account_key (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionFeesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel|array<string,object>
+     * @return \Tns\EpayPolicy\Model\GetTransactionFeesResponseModel|array<string,object>
      */
     public function transactionFeesGet($amount, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionFeesGet'][0])
     {
@@ -151,9 +151,9 @@ class TransactionFeesApi
      * @param  string $impersonation_account_key (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['transactionFeesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetTransactionFeesResponseModel|array<string,object>, HTTP status code, HTTP response headers (array of strings)
      */
     public function transactionFeesGetWithHttpInfo($amount, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionFeesGet'][0])
     {
@@ -196,11 +196,11 @@ class TransactionFeesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -218,7 +218,7 @@ class TransactionFeesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -251,7 +251,7 @@ class TransactionFeesApi
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -284,7 +284,7 @@ class TransactionFeesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel',
+                        '\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -338,7 +338,7 @@ class TransactionFeesApi
      */
     public function transactionFeesGetAsyncWithHttpInfo($amount, $impersonation_account_key = null, string $contentType = self::contentTypes['transactionFeesGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetTransactionFeesResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetTransactionFeesResponseModel';
         $request = $this->transactionFeesGetRequest($amount, $impersonation_account_key, $contentType);
 
         return $this->client

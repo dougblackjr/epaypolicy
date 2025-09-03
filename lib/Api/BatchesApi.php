@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Api;
+namespace Tns\EpayPolicy\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Tns\\EpayPolicy\ApiException;
-use Tns\\EpayPolicy\Configuration;
-use Tns\\EpayPolicy\HeaderSelector;
-use Tns\\EpayPolicy\ObjectSerializer;
+use Tns\EpayPolicy\ApiException;
+use Tns\EpayPolicy\Configuration;
+use Tns\EpayPolicy\HeaderSelector;
+use Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * BatchesApi Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,9 +132,9 @@ class BatchesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the batches were processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['batchesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \Tns\\EpayPolicy\Model\GetBatchesResponseModel
+     * @return \Tns\EpayPolicy\Model\GetBatchesResponseModel
      */
     public function batchesGet($page = null, $impersonation_account_key = null, string $contentType = self::contentTypes['batchesGet'][0])
     {
@@ -151,9 +151,9 @@ class BatchesApi
      * @param  string $impersonation_account_key The key that allows impersonation of another account for which the batches were processed. Only specify a value if the account being impersonated is different from the account that is submitting this request. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['batchesGet'] to see the possible values for this operation
      *
-     * @throws \Tns\\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Tns\EpayPolicy\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \Tns\\EpayPolicy\Model\GetBatchesResponseModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Tns\EpayPolicy\Model\GetBatchesResponseModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function batchesGetWithHttpInfo($page = null, $impersonation_account_key = null, string $contentType = self::contentTypes['batchesGet'][0])
     {
@@ -196,11 +196,11 @@ class BatchesApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Tns\\EpayPolicy\Model\GetBatchesResponseModel' === '\SplFileObject') {
+                    if ('\Tns\EpayPolicy\Model\GetBatchesResponseModel' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Tns\\EpayPolicy\Model\GetBatchesResponseModel' !== 'string') {
+                        if ('\Tns\EpayPolicy\Model\GetBatchesResponseModel' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -218,13 +218,13 @@ class BatchesApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Tns\\EpayPolicy\Model\GetBatchesResponseModel', []),
+                        ObjectSerializer::deserialize($content, '\Tns\EpayPolicy\Model\GetBatchesResponseModel', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Tns\\EpayPolicy\Model\GetBatchesResponseModel';
+            $returnType = '\Tns\EpayPolicy\Model\GetBatchesResponseModel';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -257,7 +257,7 @@ class BatchesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Tns\\EpayPolicy\Model\GetBatchesResponseModel',
+                        '\Tns\EpayPolicy\Model\GetBatchesResponseModel',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -303,7 +303,7 @@ class BatchesApi
      */
     public function batchesGetAsyncWithHttpInfo($page = null, $impersonation_account_key = null, string $contentType = self::contentTypes['batchesGet'][0])
     {
-        $returnType = '\Tns\\EpayPolicy\Model\GetBatchesResponseModel';
+        $returnType = '\Tns\EpayPolicy\Model\GetBatchesResponseModel';
         $request = $this->batchesGetRequest($page, $impersonation_account_key, $contentType);
 
         return $this->client

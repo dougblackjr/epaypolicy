@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * InvoicesModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,10 +65,10 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
         'enable_autopay_payless_enrollment' => 'bool',
         'auto_pay_email_offset' => 'int',
         'auto_pay_cancelable' => 'bool',
-        'invoice_attribute_metadata' => '\Tns\\EpayPolicy\Model\AttributeMetadataModel[]',
-        'invoices' => '\Tns\\EpayPolicy\Model\InvoiceModel[]',
+        'invoice_attribute_metadata' => '\Tns\EpayPolicy\Model\AttributeMetadataModel[]',
+        'invoices' => '\Tns\EpayPolicy\Model\InvoiceModel[]',
         'status' => 'string',
-        'exception' => '\Tns\\EpayPolicy\Model\SerializableException',
+        'exception' => '\Tns\EpayPolicy\Model\SerializableException',
         'any_financing_eligible' => 'bool'
     ];
 
@@ -587,7 +587,7 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoice_attribute_metadata
      *
-     * @return \Tns\\EpayPolicy\Model\AttributeMetadataModel[]|null
+     * @return \Tns\EpayPolicy\Model\AttributeMetadataModel[]|null
      */
     public function getInvoiceAttributeMetadata()
     {
@@ -597,7 +597,7 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoice_attribute_metadata
      *
-     * @param \Tns\\EpayPolicy\Model\AttributeMetadataModel[]|null $invoice_attribute_metadata Metadata on any custom attributes that will be displayed at the invoice level.
+     * @param \Tns\EpayPolicy\Model\AttributeMetadataModel[]|null $invoice_attribute_metadata Metadata on any custom attributes that will be displayed at the invoice level.
      *
      * @return self
      */
@@ -614,7 +614,7 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets invoices
      *
-     * @return \Tns\\EpayPolicy\Model\InvoiceModel[]|null
+     * @return \Tns\EpayPolicy\Model\InvoiceModel[]|null
      */
     public function getInvoices()
     {
@@ -624,7 +624,7 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets invoices
      *
-     * @param \Tns\\EpayPolicy\Model\InvoiceModel[]|null $invoices The collection of invoices.
+     * @param \Tns\EpayPolicy\Model\InvoiceModel[]|null $invoices The collection of invoices.
      *
      * @return self
      */
@@ -678,7 +678,7 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets exception
      *
-     * @return \Tns\\EpayPolicy\Model\SerializableException|null
+     * @return \Tns\EpayPolicy\Model\SerializableException|null
      */
     public function getException()
     {
@@ -688,7 +688,7 @@ class InvoicesModel implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets exception
      *
-     * @param \Tns\\EpayPolicy\Model\SerializableException|null $exception exception
+     * @param \Tns\EpayPolicy\Model\SerializableException|null $exception exception
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * PostCreateManagedInvoicesRequestModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,9 +67,9 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
         'customer_name' => 'string',
         'invoice_number' => 'string',
         'due_date' => '\DateTime',
-        'line_items' => '\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]',
-        'taxes' => '\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]',
-        'fees' => '\Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]',
+        'line_items' => '\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]',
+        'taxes' => '\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]',
+        'fees' => '\Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]',
         'show_breakdown_during_payment' => 'bool'
     ];
 
@@ -641,7 +641,7 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
     /**
      * Gets line_items
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]
      */
     public function getLineItems()
     {
@@ -651,7 +651,7 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
     /**
      * Sets line_items
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[] $line_items line_items
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[] $line_items line_items
      *
      * @return self
      */
@@ -668,7 +668,7 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
     /**
      * Gets taxes
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
      */
     public function getTaxes()
     {
@@ -678,7 +678,7 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
     /**
      * Sets taxes
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $taxes taxes
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $taxes taxes
      *
      * @return self
      */
@@ -695,7 +695,7 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
     /**
      * Gets fees
      *
-     * @return \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
+     * @return \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null
      */
     public function getFees()
     {
@@ -705,7 +705,7 @@ class PostCreateManagedInvoicesRequestModel implements ModelInterface, ArrayAcce
     /**
      * Sets fees
      *
-     * @param \Tns\\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $fees fees
+     * @param \Tns\EpayPolicy\Model\QuoteInvoiceLineItem[]|null $fees fees
      *
      * @return self
      */

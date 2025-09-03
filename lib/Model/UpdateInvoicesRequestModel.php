@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * UpdateInvoicesRequestModel Class Doc Comment
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class UpdateInvoicesRequestModel implements ModelInterface, ArrayAccess, \JsonSe
         'id' => 'int',
         'payer' => 'string',
         'email_address' => 'string',
-        'paid_invoices' => '\Tns\\EpayPolicy\Model\PaidInvoiceModel[]',
+        'paid_invoices' => '\Tns\EpayPolicy\Model\PaidInvoiceModel[]',
         'attribute_values' => 'array<string,string>'
     ];
 
@@ -402,7 +402,7 @@ class UpdateInvoicesRequestModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets paid_invoices
      *
-     * @return \Tns\\EpayPolicy\Model\PaidInvoiceModel[]|null
+     * @return \Tns\EpayPolicy\Model\PaidInvoiceModel[]|null
      */
     public function getPaidInvoices()
     {
@@ -412,7 +412,7 @@ class UpdateInvoicesRequestModel implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets paid_invoices
      *
-     * @param \Tns\\EpayPolicy\Model\PaidInvoiceModel[]|null $paid_invoices The collection of paid invoices with amounts and comments.
+     * @param \Tns\EpayPolicy\Model\PaidInvoiceModel[]|null $paid_invoices The collection of paid invoices with amounts and comments.
      *
      * @return self
      */

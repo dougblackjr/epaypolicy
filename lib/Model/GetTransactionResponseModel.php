@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Tns\\EpayPolicy\Model;
+namespace Tns\EpayPolicy\Model;
 
 use \ArrayAccess;
-use \Tns\\EpayPolicy\ObjectSerializer;
+use \Tns\EpayPolicy\ObjectSerializer;
 
 /**
  * GetTransactionResponseModel Class Doc Comment
  *
  * @category Class
  * @description Provides details of a transaction.
- * @package  Tns\\EpayPolicy
+ * @package  Tns\EpayPolicy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -70,10 +70,10 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
         'masked_account_number' => 'string',
         'comments' => 'string',
         'original_transaction_id' => 'int',
-        'events' => '\Tns\\EpayPolicy\Model\TransactionEventModel[]',
-        'attribute_values' => '\Tns\\EpayPolicy\Model\AttributeValueModel[]',
-        'attachments' => '\Tns\\EpayPolicy\Model\AttachmentModel[]',
-        'paid_invoices' => '\Tns\\EpayPolicy\Model\PaidInvoiceModel[]',
+        'events' => '\Tns\EpayPolicy\Model\TransactionEventModel[]',
+        'attribute_values' => '\Tns\EpayPolicy\Model\AttributeValueModel[]',
+        'attachments' => '\Tns\EpayPolicy\Model\AttachmentModel[]',
+        'paid_invoices' => '\Tns\EpayPolicy\Model\PaidInvoiceModel[]',
         'financing_account' => 'string'
     ];
 
@@ -744,7 +744,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets events
      *
-     * @return \Tns\\EpayPolicy\Model\TransactionEventModel[]|null
+     * @return \Tns\EpayPolicy\Model\TransactionEventModel[]|null
      */
     public function getEvents()
     {
@@ -754,7 +754,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets events
      *
-     * @param \Tns\\EpayPolicy\Model\TransactionEventModel[]|null $events A collection of all events that have occurred.
+     * @param \Tns\EpayPolicy\Model\TransactionEventModel[]|null $events A collection of all events that have occurred.
      *
      * @return self
      */
@@ -771,7 +771,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets attribute_values
      *
-     * @return \Tns\\EpayPolicy\Model\AttributeValueModel[]|null
+     * @return \Tns\EpayPolicy\Model\AttributeValueModel[]|null
      */
     public function getAttributeValues()
     {
@@ -781,7 +781,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets attribute_values
      *
-     * @param \Tns\\EpayPolicy\Model\AttributeValueModel[]|null $attribute_values A collection of key/value pairs for any custom attribute values for this transaction.
+     * @param \Tns\EpayPolicy\Model\AttributeValueModel[]|null $attribute_values A collection of key/value pairs for any custom attribute values for this transaction.
      *
      * @return self
      */
@@ -798,7 +798,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets attachments
      *
-     * @return \Tns\\EpayPolicy\Model\AttachmentModel[]|null
+     * @return \Tns\EpayPolicy\Model\AttachmentModel[]|null
      */
     public function getAttachments()
     {
@@ -808,7 +808,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets attachments
      *
-     * @param \Tns\\EpayPolicy\Model\AttachmentModel[]|null $attachments A collection of all attachments for this transaction.
+     * @param \Tns\EpayPolicy\Model\AttachmentModel[]|null $attachments A collection of all attachments for this transaction.
      *
      * @return self
      */
@@ -825,7 +825,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets paid_invoices
      *
-     * @return \Tns\\EpayPolicy\Model\PaidInvoiceModel[]|null
+     * @return \Tns\EpayPolicy\Model\PaidInvoiceModel[]|null
      */
     public function getPaidInvoices()
     {
@@ -835,7 +835,7 @@ class GetTransactionResponseModel implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets paid_invoices
      *
-     * @param \Tns\\EpayPolicy\Model\PaidInvoiceModel[]|null $paid_invoices A collection of all paid invoices for this transaction.
+     * @param \Tns\EpayPolicy\Model\PaidInvoiceModel[]|null $paid_invoices A collection of all paid invoices for this transaction.
      *
      * @return self
      */
